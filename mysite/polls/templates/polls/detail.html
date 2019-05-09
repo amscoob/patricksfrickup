@@ -1,3 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            /* css goes here */
+            body{
+                font-family: 'Comic Sans MS';
+                background-color: #293954;
+                color:white;
+             }
+            img{
+                width: 200px;
+            }
+        </style>
+    </head>
+</body>
 <h1>{{ question.question_text }}</h1>
 
 {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
@@ -10,4 +26,8 @@
 {% endfor %}
 <input type="submit" value="Vote">
 </form>
+    <img src="{{question.img}}">
+</body>
+</html>
+
 
